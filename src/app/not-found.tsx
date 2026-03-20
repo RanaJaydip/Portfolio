@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NotFound() {
   return (
     <div className="py-16">
@@ -7,9 +9,9 @@ export default function NotFound() {
         <p className="mt-2 text-sm text-muted">
           The page you’re looking for doesn’t exist.
         </p>
-        <a className="btn btn-primary mt-6" href="/">
+        <Link href="/" className="btn btn-primary mt-6">
           Go home
-        </a>
+        </Link>
       </div>
     </div>
   );
